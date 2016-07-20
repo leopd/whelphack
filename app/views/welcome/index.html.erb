@@ -24,10 +24,11 @@ or
 <div class="location">
 <script>
 function enable_search() {
+    $("#getlocation").css("display","none");
     $("#searchlink").css("display","block");
 }
 </script>
-    <p><button onclick="getLocation(enable_search)">Get Location</button></p>
+    <p><button id="getlocation" onclick="getLocation(enable_search)">Find nearby workplaces</button></p>
     <div id="location-notice">
     </div>
     <div id="mapholder">
