@@ -5,6 +5,7 @@ From #DTools4Workers hackathon
 
 ## TODO
 
+* Find a workplace
 * Foursquare API integration
 * Different roles at a jobsite.
 * Rename jobsite to workplace.

@@ -1,8 +1,12 @@
-<h1>New jobsite</h1>
+<h1>New Workplace</h1>
+
+<h3>
+Can't find your workplace?  Create a new one.
+</h3>
 
 <script>
 function getLocation() {
-    var x = document.getElementById("Location");
+    var x = document.getElementById("location-notice");
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition,showError);
     } else {
@@ -11,7 +15,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    var x = document.getElementById("Location");
+    var x = document.getElementById("location-notice");
     $("#jobsite_lat").val(position.coords.latitude);
     $("#jobsite_long").val(position.coords.longitude);
     x.innerHTML = "Location found";
@@ -23,7 +27,7 @@ function showPosition(position) {
 }
 
 function showError(error) {
-    var x = document.getElementById("Location");
+    var x = document.getElementById("location-notice");
     switch(error.code) {
         case error.PERMISSION_DENIED:
             x.innerHTML = "User denied the request for Geolocation."
@@ -43,7 +47,7 @@ function showError(error) {
 
 <div class="location">
 <p><button onclick="getLocation()">Get Location</button></p>
-<div id="Location">
+<div id="location-notice">
 </div>
 <div id="mapholder">
 </div>
@@ -51,4 +55,3 @@ function showError(error) {
 </div>
 <%= render 'form' %>
 
-<%= link_to 'Back', jobsites_path %>

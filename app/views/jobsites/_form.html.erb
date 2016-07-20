@@ -1,7 +1,7 @@
 <%= form_for(@jobsite) do |f| %>
   <% if @jobsite.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@jobsite.errors.count, "error") %> prohibited this jobsite from being saved:</h2>
+      <h2><%= pluralize(@jobsite.errors.count, "error") %> prohibited this Workplace from being saved:</h2>
 
       <ul>
       <% @jobsite.errors.full_messages.each do |msg| %>
