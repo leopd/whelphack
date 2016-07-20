@@ -5,10 +5,21 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <div class="header">
+        <span class="em">WHelp</span>
+        <ul>
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Job Sites', controller='jobsites' %></li>
+        </ul>
+    </div>
 
+
+<div class="content">
 <%= yield %>
+</div>
 
 </body>
 </html>
