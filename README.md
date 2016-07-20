@@ -5,9 +5,7 @@ From #DTools4Workers hackathon
 
 ## TODO
 
-* Jobsites have geo-location data
-    * Find current location with http://www.w3schools.com/html/html5_geolocation.asp
-    * Make foursquare API calls
+* Foursquare API integration
 * Different roles at a jobsite.
 * Rename jobsite to workplace.
 * Maps view
