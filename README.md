@@ -21,6 +21,7 @@ From #DTools4Workers hackathon
 
 Make it prettier...
 
+* Static map has pin
 * Bootstrap CSS
 * Clean up links and such.
 * React frontend
@@ -29,3 +30,4 @@ Make it prettier...
 ## Bugs...
 
 * CSS not showing up in heroku
+* getlocation button not working on mobile safari
