@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  details: MyText
+  actual_wage: 9.99
+  fair_wage: 9.99
+  when: 2016-07-20 07:14:16
+  jobsite_id: 
+
+two:
+  title: MyString
+  details: MyText
+  actual_wage: 9.99
+  fair_wage: 9.99
+  when: 2016-07-20 07:14:16
+  jobsite_id: 

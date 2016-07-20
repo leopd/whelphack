@@ -1,4 +1,6 @@
 Whelphack::Application.routes.draw do
+  resources :reviews
+
   resources :jobsites
 
   get "welcome/index"
