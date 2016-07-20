@@ -5,11 +5,11 @@ From #DTools4Workers hackathon
 
 ## TODO
 
-* Find a workplace
+* Maps view
+* Find a nearby workplace - GPS search
 * Foursquare API integration
 * Different roles at a jobsite.
 * Rename jobsite to workplace.
-* Maps view
 * Setup login system
     * Facebook
     * Phone number
@@ -30,5 +30,3 @@ Make it prettier...
 
 ## Bugs...
 
-* CSS not showing up in heroku
-* getlocation button not working on mobile safari
