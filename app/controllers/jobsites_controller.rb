@@ -8,6 +8,8 @@ class JobsitesController < ApplicationController
   end
 
   def search
+    @lat = params[:lat]
+    @long = params[:long]
     @jobsites = Jobsite.all
   end
 

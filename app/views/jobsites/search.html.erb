@@ -1,0 +1,30 @@
+<h1>Searching Nearby Workplaces</h1>
+<h2>Near <%= @lat %>,<%= @long%></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Business Name</th>
+      <th>Address</th>
+      <th>Zipcode</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jobsites.each do |jobsite| %>
+      <tr>
+        <td><%= jobsite.name %></td>
+        <td><%= jobsite.address %></td>
+        <td><%= jobsite.zipcode %></td>
+        <td><%= link_to 'Show', jobsite %></td>
+        <td><%= link_to 'Edit', edit_jobsite_path(jobsite) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Workplace', new_jobsite_path %>

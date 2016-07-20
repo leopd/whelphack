@@ -32,10 +32,10 @@ function enable_search() {
     </div>
     <div id="mapholder">
     </div>
-    <div id="searchlink" style="display:none">
-        <input type="hidden" id="jobsite_lat">
-        <input type="hidden" id="jobsite_long">
-        <%= link_to "Find a nearby workplace", controller: "jobsites", action: "search" %>
-    </div>
+    <form action="<%= search_jobsites_path %>" method="get" id="searchlink" style="display:none">
+        <input type="hidden" name="lat" id="jobsite_lat">
+        <input type="hidden" name="long" id="jobsite_long">
+        <input type="submit" value="Find a nearby workplace">
+    </form>
 </div>
 
