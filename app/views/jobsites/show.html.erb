@@ -16,6 +16,15 @@
 </p>
 
 <p>
+  <strong>Actual / Fair wage:</strong>
+  $<%= @jobsite.avg_actual_wage %> /
+  $<%= @jobsite.avg_fair_wage %>
+  <br/>
+  (Based on <%= @jobsite.reviews.count %> reviews)
+</p>
+
+
+<p>
   <strong>Lat:</strong>
   <%= @jobsite.lat %>
 </p>
