@@ -6,6 +6,7 @@
       <th>Business Name</th>
       <th>Address</th>
       <th>Zipcode</th>
+      <th>Average Wage</th>
       <th></th>
       <th></th>
       <th></th>
@@ -18,6 +19,7 @@
         <td><%= jobsite.name %></td>
         <td><%= jobsite.address %></td>
         <td><%= jobsite.zipcode %></td>
+        <td>$<%= jobsite.avg_actual_wage %></td>
         <td><%= link_to 'Show', jobsite %></td>
         <td><%= link_to 'Edit', edit_jobsite_path(jobsite) %></td>
       </tr>
