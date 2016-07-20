@@ -22,3 +22,10 @@
     border: 1px solid blue;
     padding: 3px;
 }
+
+.review {
+    background: #ccc;
+    border; 3px solid #999;
+    margin: 5px;
+    padding: 5px;
+}

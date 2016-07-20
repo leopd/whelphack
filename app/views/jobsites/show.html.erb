@@ -73,3 +73,19 @@
   </div>
 <% end %>
 </div>
+
+<hr>
+
+<% @jobsite.reviews.each do |review| %>
+
+  <div class="review">
+    <h4><%= review.title %></h4>
+    <div><%= review.details %></div>
+    <div>
+        I am paid: $<%= review.actual_wage %>
+    </div>
+    <div>
+        To work here I should be paid: $<%= review.fair_wage %>
+    </div>
+  </div>
+<% end %>
