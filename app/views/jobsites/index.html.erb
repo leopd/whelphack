@@ -3,11 +3,9 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Business Name</th>
       <th>Address</th>
       <th>Zipcode</th>
-      <th>Lat</th>
-      <th>Long</th>
       <th></th>
       <th></th>
       <th></th>
@@ -20,11 +18,8 @@
         <td><%= jobsite.name %></td>
         <td><%= jobsite.address %></td>
         <td><%= jobsite.zipcode %></td>
-        <td><%= jobsite.lat %></td>
-        <td><%= jobsite.long %></td>
         <td><%= link_to 'Show', jobsite %></td>
         <td><%= link_to 'Edit', edit_jobsite_path(jobsite) %></td>
-        <td><%= link_to 'Destroy', jobsite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
