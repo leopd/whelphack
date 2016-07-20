@@ -19,5 +19,8 @@ module Whelphack
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    config.foursquare_client_id = '3FSBWXOO5YAU5SCU4ER1JW5QO3JECT3PPUICXL05EPFAP0WF'
+    config.foursquare_client_secret = 'XCE11ZYLMNQB204QENFUT4NBDMZJFUSLJCI2HQNQFIJJBWBC'
   end
 end
