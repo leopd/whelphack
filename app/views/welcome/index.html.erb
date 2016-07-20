@@ -19,7 +19,23 @@
 
 To start, find a workplace.
 
-<%= link_to "Find a nearby workplace", controller: "jobsites", action: "search" %>
-or
 <%= link_to "List all workplaces", controller: "jobsites" %>
+or
+<div class="location">
+<script>
+function enable_search() {
+    $("#searchlink").css("display","block");
+}
+</script>
+    <p><button onclick="getLocation(enable_search)">Get Location</button></p>
+    <div id="location-notice">
+    </div>
+    <div id="mapholder">
+    </div>
+    <div id="searchlink" style="display:none">
+        <input type="hidden" id="jobsite_lat">
+        <input type="hidden" id="jobsite_long">
+        <%= link_to "Find a nearby workplace", controller: "jobsites", action: "search" %>
+    </div>
+</div>
 

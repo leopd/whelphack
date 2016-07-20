@@ -1,8 +1,13 @@
 
-function getLocation() {
+function getLocation(callback) {
     var x = document.getElementById("location-notice");
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition,showError);
+        navigator.geolocation.getCurrentPosition(function(position) {
+            showPosition(position);
+            if( callback ) {
+                callback(position);
+            }
+        },showError);
     } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
