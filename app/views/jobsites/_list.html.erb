@@ -3,10 +3,8 @@
     <tr>
       <th>Business Name</th>
       <th>Address</th>
-      <th>Zipcode</th>
-      <th>Average Wage</th>
-      <th></th>
-      <th></th>
+      <th>Avg Wage</th>
+      <th>Score</th>
       <th></th>
     </tr>
   </thead>
@@ -16,10 +14,9 @@
       <tr>
         <td><%= jobsite.name %></td>
         <td><%= jobsite.address %></td>
-        <td><%= jobsite.zipcode %></td>
         <td>$<%= jobsite.avg_actual_wage %></td>
-        <td><%= link_to 'Show', jobsite %></td>
-        <td><%= link_to 'Edit', edit_jobsite_path(jobsite) %></td>
+        <td><img src="https://dawsonreviews.files.wordpress.com/2012/10/3-stars.jpg" width="50px"></td>
+        <td><%= link_to 'Write a review', jobsite %></td>
       </tr>
     <% end %>
   </tbody>
