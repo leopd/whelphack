@@ -2,6 +2,9 @@ Whelphack::Application.routes.draw do
 
   resources :jobsites do
     resources :reviews
+    collection do
+        get 'search'
+    end
   end
 
   get "welcome/index"

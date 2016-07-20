@@ -7,6 +7,10 @@ class JobsitesController < ApplicationController
     @jobsites = Jobsite.all
   end
 
+  def search
+    @jobsites = Jobsite.all
+  end
+
   # GET /jobsites/1
   # GET /jobsites/1.json
   def show
@@ -16,7 +20,6 @@ class JobsitesController < ApplicationController
   # GET /jobsites/new
   def new
     @jobsite = Jobsite.new
-    @apikey = Rails.application.config.googlemaps_api_key
   end
 
   # GET /jobsites/1/edit
