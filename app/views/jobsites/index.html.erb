@@ -1,32 +1,4 @@
-<h1>Listing Workplaces</h1>
+<h1>Listing All Workplaces</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Business Name</th>
-      <th>Address</th>
-      <th>Zipcode</th>
-      <th>Average Wage</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<%= render 'list' %>
 
-  <tbody>
-    <% @jobsites.each do |jobsite| %>
-      <tr>
-        <td><%= jobsite.name %></td>
-        <td><%= jobsite.address %></td>
-        <td><%= jobsite.zipcode %></td>
-        <td>$<%= jobsite.avg_actual_wage %></td>
-        <td><%= link_to 'Show', jobsite %></td>
-        <td><%= link_to 'Edit', edit_jobsite_path(jobsite) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Workplace', new_jobsite_path %>
