@@ -1,7 +1,8 @@
 Whelphack::Application.routes.draw do
-  resources :reviews
 
-  resources :jobsites
+  resources :jobsites do
+    resources :reviews
+  end
 
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.

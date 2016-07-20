@@ -10,6 +10,7 @@ class JobsitesController < ApplicationController
   # GET /jobsites/1
   # GET /jobsites/1.json
   def show
+    @review = Review.new
   end
 
   # GET /jobsites/new

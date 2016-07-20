@@ -17,3 +17,8 @@
     background: blue;
     width: 100%
 }
+
+.create-review {
+    border: 1px solid blue;
+    padding: 3px;
+}

@@ -25,5 +25,42 @@
   <%= @jobsite.long %>
 </p>
 
-<%= link_to 'Edit', edit_jobsite_path(@jobsite) %> |
-<%= link_to 'Back', jobsites_path %>
+<%= link_to 'Edit this Job Site', edit_jobsite_path(@jobsite) %> |
+
+<div class="create-review">
+<h3>leave a review</h3>
+
+<%= form_for([@jobsite, @jobsite.reviews.build]) do |f| %>
+  <% if @review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+      <% @review.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :details %><br>
+    <%= f.text_area :details %>
+  </div>
+  <div class="field">
+    <%= f.label :actual_wage %><br>
+    <%= f.text_field :actual_wage %>
+  </div>
+  <div class="field">
+    <%= f.label :fair_wage %><br>
+    <%= f.text_field :fair_wage %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</div>
