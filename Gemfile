@@ -45,3 +45,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'rails_serve_static_assets'
+gem 'rails_stdout_logging'
