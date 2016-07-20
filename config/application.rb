@@ -22,5 +22,7 @@ module Whelphack
 
     config.foursquare_client_id = '3FSBWXOO5YAU5SCU4ER1JW5QO3JECT3PPUICXL05EPFAP0WF'
     config.foursquare_client_secret = 'XCE11ZYLMNQB204QENFUT4NBDMZJFUSLJCI2HQNQFIJJBWBC'
+
+    config.googlemaps_api_key = 'AIzaSyBWLp2UE0TZ1E7dI9DszE7Zzn4nLr6Etl8'
   end
 end

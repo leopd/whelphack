@@ -16,6 +16,7 @@ class JobsitesController < ApplicationController
   # GET /jobsites/new
   def new
     @jobsite = Jobsite.new
+    @apikey = Rails.application.config.googlemaps_api_key
   end
 
   # GET /jobsites/1/edit
