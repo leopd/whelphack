@@ -6,7 +6,12 @@ class Jobsite < ActiveRecord::Base
             return nil
         end
         all = self.reviews.map {|r| r.actual_wage}
-        return all.reduce(:+) / all.size.to_f
+        all = all.select(&:present?)
+        if all then
+            return all.reduce(:+) / all.size.to_f
+        else
+            return nil
+        end
     end
 
     def avg_fair_wage
